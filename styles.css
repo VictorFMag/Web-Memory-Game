@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#tabuleiro {
+    flex: 4;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.carta {
+    height: 350px;
+    background: url('./images/card.svg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.carta img {
+    max-width: 100%;
+    max-height: 100%;
+    visibility: hidden;
+}
+
+.info-jogo {
+    flex: 1;
+    text-align: center;
+}
+
+button {
+    background-color: #0F87F6; /* Cor de fundo azul */
+    color: #FFF; /* Cor do texto branco */
+    font-size: 20px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno (topo e baixo, esquerda e direita) */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão para indicar que é clicável */
+    text-transform: uppercase; /* Texto em caixa alta (maiúsculas) */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo ao passar o mouse */
+}
+
+button:hover {
+    background-color: #0C6BBE;
+}
